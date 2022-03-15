@@ -19,6 +19,9 @@ function Header() {
                     <li>
                         <Link to='/maps'>Maps</Link>
                     </li>
+                    <li>
+                        <Link to='/maps'>all</Link>
+                    </li>
                     
                 </ul>
             </nav>
