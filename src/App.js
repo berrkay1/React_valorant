@@ -4,9 +4,9 @@ import { useContext, useEffect } from 'react';
 import './styles/App.css';
 import {BrowserRouter as Router , Routes,Route} from 'react-router-dom';
 // componenets
-import Weapons from './pages/Weapons.jsx';
-import Agents from './pages/Agents.jsx';
-import Maps from './pages/Maps.jsx';
+import Weapons from './pages/Weapons';
+import Agents from './pages/Agents';
+import Maps from './pages/Maps';
 import Header from './components/Header';
 
 

@@ -7,8 +7,8 @@ import axios from 'axios';
 export const AppLevelProvider = ({children}) =>{
 
     const [agents,setAgents] = useState([])
-    const [maps,setMaps] = useState([])
-    const [weapons,setWeapons] = useState([])
+    // const [maps,setMaps] = useState([])
+    // const [weapons,setWeapons] = useState([])
 
     const fetchAgents = async () =>{
         const response = await axios.get(`${api}/agents`)
@@ -19,7 +19,15 @@ export const AppLevelProvider = ({children}) =>{
 
 
     return (
-        <AppLevelContext.Provider value={{agents,maps,weapons,setAgents,setMaps,setWeapons,fetchAgents}}>{children}</AppLevelContext.Provider>
+        <AppLevelContext.Provider value={{
+             agents,
+            // maps,
+            // weapons,
+             setAgents,
+            // setMaps,
+            //setWeapons,
+            fetchAgents
+        }}>{children}</AppLevelContext.Provider>
     )
 }
 
