@@ -4,10 +4,15 @@ import logo from '../images/logo.png'
 import { Link } from 'react-router-dom';
 
 function Header() {
+
+
+    
   return (
     <header>
+            <div className="top-header">
             <img src={logo} alt="logo" />
             <h1>WOLORANT WİKİ</h1>
+            </div>
             <nav>
                 <ul>
                     <li>

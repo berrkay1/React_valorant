@@ -3,6 +3,7 @@ import AppLevelContext from './context/AppLeveContext';
 import { useContext, useEffect } from 'react';
 import './styles/App.css';
 import {BrowserRouter as Router , Routes,Route} from 'react-router-dom';
+import './styles/App.css';
 // componenets
 import Weapons from './pages/Weapons';
 import Agents from './pages/Agents';

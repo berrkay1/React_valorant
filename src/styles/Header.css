@@ -1,6 +1,7 @@
-
+/* 
 header{
     height: 80px;
+    width: 100%;
     display: flex;
     width: 100%;
     background-color: #fff;
@@ -8,9 +9,35 @@ header{
     padding: 0 100px;
     align-items: center;
     font-size: 1.5rem;
+    
+}
+header .top-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #ff4655;
 }
 
- img{
-    
+header .top-header img{
+    margin-right: 20px;
     height: 70px;
 }
+header .top-header ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    
+}
+
+.top-header ul li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #ff4655;
+    
+} */
