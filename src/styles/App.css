@@ -36,16 +36,19 @@ header .top-header img{
     height: 70px;
 }
 
-header .top-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    color: #ff4655;
-}
+
 header .top-header img{
     margin-right: 20px;
     height: 70px;
+}
+header .top-header a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #ff4655;
+    margin-right:500px;
+   
 }
 header  ul{
     height: 100%;
@@ -66,7 +69,7 @@ nav ul li a {
     margin-right: 20px;
     color: #ff4655;
     padding-bottom: 5px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: 300ms ease;
     font-weight: bold;
     

@@ -1,20 +1,37 @@
-import React from 'react'
-import '../styles/Header.css';
+import React, { useEffect, useRef, useState } from 'react'
 import logo from '../images/logo.png'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
 
 
-    
-  return (
-    <header>
+
+    const location = useLocation();
+    const currentPage = useRef(location.pathname);
+
+    useEffect(() => {
+
+        if (location.pathname !== '/') {
+            currentPage.current = location.pathname.slice(1)
+            console.log(currentPage.current);
+        } else {
+            currentPage.current = 'home';
+        }
+
+    }, [location]);
+
+
+    return (
+        <header>
             <div className="top-header">
-            <img src={logo} alt="logo" />
-            <h1>WOLORANT WİKİ</h1>
+                <Link to={'/'}>
+                <img src={logo} alt="logo" />
+                <h1>WOLORANT WİKİ</h1>
+                </Link>
             </div>
             <nav>
                 <ul>
+                    
                     <li>
                         <Link to='/weapons'>Weapons</Link>
                     </li>
@@ -24,11 +41,11 @@ function Header() {
                     <li>
                         <Link to='/maps'>Maps</Link>
                     </li>
-                    
+
                 </ul>
             </nav>
-    </header>
-  )
+        </header>
+    )
 }
 
 export default Header;
