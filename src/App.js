@@ -8,7 +8,7 @@ import './styles/App.css';
 import Weapons from './pages/Weapons';
 import Agents from './pages/Agents';
 import Maps from './pages/Maps';
-import Header from './components/Header';
+import Header from './components/header/Header';
 import HomePage from './pages/HomePage';
 
 
@@ -19,6 +19,7 @@ function App() {
   
  useEffect(()=>{
    fetchAgents();
+   // eslint-disable-next-line
  },[])
 
   return (

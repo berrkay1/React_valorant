@@ -11,7 +11,7 @@ export const AppLevelProvider = ({children}) =>{
     // const [weapons,setWeapons] = useState([])
 
     const fetchAgents = async () =>{
-        const response = await axios.get(`${api}/agents`)
+        const response = await axios.get(`${api}/agents?isPlayableCharacter=true`)
         setAgents(response.data.data);
     }
 
